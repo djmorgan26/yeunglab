@@ -1,0 +1,14 @@
+{
+  "name": "yeunglab",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "data:create-sheet": "node scripts/create-sheet.js",
+    "data:sync": "node scripts/sync-data.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "googleapis": "^144.0.0"
+  }
+}
