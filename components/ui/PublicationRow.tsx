@@ -1,4 +1,5 @@
 import type { Publication } from '@/types';
+import { safeHref } from '@/lib/utils';
 
 interface PublicationRowProps {
   publication: Publication;
@@ -16,7 +17,7 @@ export default function PublicationRow({ publication }: PublicationRowProps) {
         <div className="flex-1">
           <h3 className="font-headline font-bold text-near-black text-base leading-snug mb-1">
             {publication.link ? (
-              <a href={publication.link} target="_blank" rel="noopener noreferrer" className="hover:text-emory-blue transition-colors">
+              <a href={safeHref(publication.link)} target="_blank" rel="noopener noreferrer" className="hover:text-emory-blue transition-colors">
                 {publication.title}
               </a>
             ) : (

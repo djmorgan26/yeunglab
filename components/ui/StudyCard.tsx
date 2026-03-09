@@ -1,4 +1,5 @@
 import type { Study } from '@/types';
+import { safeHref } from '@/lib/utils';
 
 interface StudyCardProps {
   study: Study;
@@ -37,7 +38,7 @@ export default function StudyCard({ study }: StudyCardProps) {
       )}
       {study.link && (
         <a
-          href={study.link}
+          href={safeHref(study.link)}
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block mt-4 text-sm font-headline font-bold text-emory-blue hover:underline"

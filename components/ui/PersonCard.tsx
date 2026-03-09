@@ -1,4 +1,5 @@
 import type { Person } from '@/types';
+import { safeHref } from '@/lib/utils';
 
 interface PersonCardProps {
   person: Person;
@@ -43,7 +44,7 @@ export default function PersonCard({ person }: PersonCardProps) {
               </a>
             )}
             {person.linkedin && (
-              <a href={person.linkedin} target="_blank" rel="noopener noreferrer" className="text-xs text-emory-blue hover:underline font-headline">
+              <a href={safeHref(person.linkedin)} target="_blank" rel="noopener noreferrer" className="text-xs text-emory-blue hover:underline font-headline">
                 LinkedIn
               </a>
             )}

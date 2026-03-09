@@ -1,5 +1,5 @@
 import type { NewsItem } from '@/types';
-import { formatDate } from '@/lib/utils';
+import { formatDate, safeHref } from '@/lib/utils';
 
 interface NewsCardProps {
   item: NewsItem;
@@ -26,7 +26,7 @@ export default function NewsCard({ item }: NewsCardProps) {
         </div>
         <h3 className="font-headline font-bold text-near-black text-base mb-2 leading-snug">
           {item.external_link ? (
-            <a href={item.external_link} target="_blank" rel="noopener noreferrer" className="hover:text-emory-blue transition-colors">
+            <a href={safeHref(item.external_link)} target="_blank" rel="noopener noreferrer" className="hover:text-emory-blue transition-colors">
               {item.title}
             </a>
           ) : (
