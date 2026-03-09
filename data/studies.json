@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Example Clinical Study",
+    "description": "Brief IRB-approved description of this study.",
+    "status": "Recruiting",
+    "irb_number": "IRB00000000",
+    "eligibility": "Adults 18+, SGM-identified",
+    "contact_name": "Research Coordinator Name",
+    "contact_email": "research@emory.edu",
+    "link": "",
+    "image_url": "",
+    "featured": true
+  }
+]

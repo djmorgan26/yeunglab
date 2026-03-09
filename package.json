@@ -2,13 +2,31 @@
   "name": "yeunglab",
   "version": "0.1.0",
   "private": true,
-  "type": "module",
   "scripts": {
-    "data:create-sheet": "node scripts/create-sheet.js",
-    "data:sync": "node scripts/sync-data.js"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "data:sync": "node scripts/sync-data.mjs",
+    "data:create-sheet": "node scripts/create-sheet.mjs"
   },
   "dependencies": {
+    "next": "^15.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
     "dotenv": "^16.4.5",
     "googleapis": "^144.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "typescript": "^5.0.0",
+    "tailwindcss": "^3.4.0",
+    "postcss": "^8.0.0",
+    "autoprefixer": "^10.0.0",
+    "@tailwindcss/typography": "^0.5.0",
+    "eslint": "^9.0.0",
+    "eslint-config-next": "^15.0.0"
   }
 }

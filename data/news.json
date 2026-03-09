@@ -1,0 +1,12 @@
+[
+  {
+    "title": "Example News Item",
+    "date": "2024-01-15",
+    "category": "Award",
+    "summary": "Short teaser for the news item.",
+    "content": "Full content goes here.",
+    "image_url": "",
+    "external_link": "",
+    "published": true
+  }
+]
