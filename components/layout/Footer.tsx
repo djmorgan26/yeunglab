@@ -1,5 +1,6 @@
 import Link from 'next/link';
-import LogoPlaceholder from '@/components/ui/LogoPlaceholder';
+import Image from 'next/image';
+import Logo from '@/components/ui/Logo';
 
 export default function Footer() {
   return (
@@ -7,12 +8,19 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Brand */}
         <div>
-          <LogoPlaceholder variant="footer" />
+          <Logo variant="footer" />
           <p className="mt-3 text-sm font-body text-blue-200">
             Advancing health through rigorous research at Emory University.
           </p>
-          {/* TODO: Replace with <Image src="/emory-logo-white.svg" alt="Emory University" width={120} height={40} /> */}
-          <p className="mt-4 text-xs text-blue-300 font-headline">Emory University</p>
+          <div className="mt-4">
+            <Image
+              src="/logos/eu-shield-hz-white.png"
+              alt="Emory University"
+              width={120}
+              height={34}
+              className="h-8 w-auto opacity-80"
+            />
+          </div>
         </div>
 
         {/* Quick links */}

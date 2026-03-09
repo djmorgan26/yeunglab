@@ -1,4 +1,4 @@
-import LogoPlaceholder from '@/components/ui/LogoPlaceholder';
+import Logo from '@/components/ui/Logo';
 import NavClient from './NavClient';
 
 const navLinks = [
@@ -16,7 +16,7 @@ export default function Nav() {
   return (
     <header className="sticky top-0 z-50 bg-white border-b border-gray-200 shadow-sm">
       <div className="max-w-6xl mx-auto px-4 flex items-center justify-between h-16">
-        <LogoPlaceholder variant="nav" />
+        <Logo variant="nav" />
         <NavClient links={navLinks} />
       </div>
     </header>

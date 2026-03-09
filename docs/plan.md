@@ -52,7 +52,10 @@ Agents working in this repo should update the status docs appropriately when wor
 - Tooling: ESLint/Prettier plus a short manual QA checklist (mobile + desktop) and Lighthouse spot checks before launch; keep the workflow lightweight.
 
 ## 7. Implementation Roadmap
-1. **Discovery & Content Audit** — **Status:** Not Started (1–2 wks). Finalize scope, inventory copy/assets, decide on form/note destinations, compile publications/projects/studies, confirm Emory compliance requirements.
+1. **Discovery & Content Audit** — **Status:** In Progress (1–2 wks). Finalize scope, inventory copy/assets, decide on form/note destinations, compile publications/projects/studies, confirm Emory compliance requirements.
+   - [x] Extract and curate Emory logo assets → `public/logos/`
+   - [x] Replace `LogoPlaceholder` with real `Logo` component (Nav + Footer)
+   - [x] Create `docs/style-guide.md` with design tokens, logo rules, and component patterns
 2. **Experience Design** — **Status:** Not Started (2 wks). Produce the site map, responsive wireframes for the long-scroll home + key detail pages, and a style tile referencing Emory branding and inspirational sites; circulate for stakeholder review.
 3. **Build & CMS Wiring** — **Status:** Not Started (2–3 wks). Scaffold the repo, implement the design system, build sections/components, wire structured content, add forms/integrations, and set up accessibility/performance tooling.
 4. **Content Load & QA** — **Status:** Not Started (1 wk). Import final bios/photos/projects, run cross-browser/mobile tests, complete Lighthouse/axe audits, conduct stakeholder walkthroughs, and iterate on feedback.
